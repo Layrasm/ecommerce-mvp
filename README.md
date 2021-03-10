@@ -1,12 +1,12 @@
-# Starter Proj
+# Ecommerce template
 
 ## Steps to setup and run
 
-1. `git clone git@github.com:Layrasm/react_rails_starter_w_auth.git <project-name>`
+1. `git clone git@github.com:Layrasm/ecommerce-mvp.git <project-name>`
 
 2. `cd project-name`
 3. `bundle install`
-4. in database.yml change name of database react_rails_router to **project-name**
+4. in database.yml change name of database ecommerce to **project-name**
 5. `rails db:create db:migrate db:seed`
 6. `rails s -p 3001`
 
