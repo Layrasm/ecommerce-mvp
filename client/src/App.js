@@ -16,20 +16,20 @@ import MyAccount from './components/MyAccount';
 function App() {
   return (
     <>
-    
+
       <FetchUser>
-      <div>
-      <NavBar/>
-        <Switch>
-          <Route exact path='/' component={WelcomePage}/>
-          <Route exact path="/login" component={Login} />
-          <Route exact path="/register" component={Register} />
-          <ProtectedRoute exact path="/home" component={Home} />
-          <ProtectedRoute exact path="/ThingsDemo" component={ThingsDemo} />
-          <ProtectedRoute exact path="/MyAccount" component={MyAccount}/>
-          
-        </Switch>
-      </div>
+        <div>
+          <NavBar />
+          <Switch>
+            <Route exact path='/' component={Home} />
+            <Route exact path="/login" component={Login} />
+            <Route exact path="/register" component={Register} />
+            <Route exact path="/welcomepage" component={WelcomePage} />
+            <ProtectedRoute exact path="/ThingsDemo" component={ThingsDemo} />
+            <ProtectedRoute exact path="/MyAccount" component={MyAccount} />
+
+          </Switch>
+        </div>
       </FetchUser>
     </>
   );

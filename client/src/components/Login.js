@@ -23,15 +23,15 @@ const Login = (props) => {
     <div>
       <h1>Login</h1>
       <form onSubmit={handleSubmit}>
-        
+
         <p>Email</p>
         <input autoFocus {...email} />
-        
-        
+
+
         <p>Password</p>
         <input type="password" {...password} />
-        
-        <button variant="info"type="submit">Login</button>
+
+        <button variant="info" type="submit">Login</button>
       </form>
       <br />
       <button variant="success" href="/">Back</button>
