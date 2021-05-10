@@ -19,7 +19,7 @@ function App() {
 
       <FetchUser>
         <div>
-          <NavBar />
+          {/* <NavBar /> */}
           <Switch>
             <Route exact path='/' component={Home} />
             <Route exact path="/login" component={Login} />

@@ -7,7 +7,7 @@ const Product = ({ product }) => {
 
   return (
     <Card className="root">
-      < CardMedia className="media" image='' title={product.name} />
+      < CardMedia className="media" image={product.image} title={product.name} />
       <CardContent CardContent >
         <div className="cardContent">
           <Typography variant="h5" gutterBottom>
@@ -17,7 +17,7 @@ const Product = ({ product }) => {
             {product.price}
           </Typography>
         </div>
-        <Typography variant="h2" color="textSecondary">
+        <Typography variant="body3" color="textSecondary">
           {product.description}
         </Typography>
 

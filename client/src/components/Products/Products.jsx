@@ -3,10 +3,11 @@ import { Grid } from '@material-ui/core';
 import Product from './Product/Product';
 
 
+
 const products = [
-  { id: 1, name: 'Shirts', description: 'cool t-shirts', price: '$5' },
-  { id: 1, name: 'Shirts', description: 'cool t-shirts', price: '$5' },
-  { id: 1, name: 'Shirts', description: 'cool t-shirts', price: '$5' },
+  { id: 1, name: 'Shirts', description: 'cool t-shirts', price: '$5', image: 'https://res.cloudinary.com/dbbgin0ik/image/upload/v1620607647/t-shirt_diz16h.jpg' },
+  { id: 2, name: 'Shirts', description: 'cool t-shirts', price: '$5', image: 'https://res.cloudinary.com/dbbgin0ik/image/upload/v1620607647/t-shirt_diz16h.jpg' },
+  { id: 3, name: 'Shirts', description: 'cool t-shirts', price: '$5', image: 'https://res.cloudinary.com/dbbgin0ik/image/upload/v1620607647/t-shirt_diz16h.jpg' },
 
 
 ];
