@@ -1,0 +1,12 @@
+.bannerMedia {
+  max-width: auto;
+  height: 400px;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bannerBackground {
+  background-color: rgb(87, 87, 87) !important;
+  padding-top: 150px !important;
+}
