@@ -1,12 +1,22 @@
 .bannerMedia {
-  max-width: auto;
+  width: 700px;
+  max-width: 90%;
   height: 400px;
-  background-color: white;
   margin-left: auto;
   margin-right: auto;
+  -webkit-box-shadow: 0px 0px 28px 2px rgba(0,255,0,0.8); 
+  box-shadow: 0px 0px 28px 2px rgba(0,255,0,0.8);
+  border-radius: 3rem;
 }
 
 .bannerBackground {
-  background-color: rgb(87, 87, 87) !important;
   padding-top: 150px !important;
+  padding-bottom: 85px !important;
+  background: linear-gradient(to top, black, 94%, rgb(105, 105, 105));
+  border-radius: 0rem !important;
+
+
 }
+
+
+

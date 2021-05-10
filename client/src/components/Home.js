@@ -2,6 +2,7 @@ import React from 'react';
 import Products from './Products/Products';
 import Navbar2 from './Navbar/Navbar';
 import Banner from './Banner/Banner';
+import '../App.css';
 
 const Home = () => {
 
@@ -9,7 +10,7 @@ const Home = () => {
 
 
   return (
-    <div>
+    <div className="home" >
       <Navbar2 />
       <Banner />
       <Products />
