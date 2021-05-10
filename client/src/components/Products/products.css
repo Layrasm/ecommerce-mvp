@@ -1,0 +1,10 @@
+.content {
+ flex-grow: 1;
+ background-color: rgb(87, 87, 87);
+ padding-top: 100px;
+ 
+}
+
+.root {
+  flex-grow: 1;
+}

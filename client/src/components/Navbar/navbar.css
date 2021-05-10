@@ -2,6 +2,7 @@
   box-shadow: none;
   border-bottom: 1px solid;
   max-width: 100%;
+
 }
 
 .title {
@@ -9,6 +10,8 @@
   align-items: center;
   display: flex;
   text-decoration: none;
+  
+  
 }
 
 .image {
@@ -17,4 +20,8 @@
 
 .grow {
   flex-grow: 1;
+}
+
+.toolbar {
+  background: linear-gradient(to bottom, #0F0, 95%, rgb(87, 87, 87));
 }

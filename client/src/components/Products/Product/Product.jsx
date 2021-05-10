@@ -6,7 +6,7 @@ import "./product.css";
 const Product = ({ product }) => {
 
   return (
-    <Card className="root">
+    <Card className="root" >
       < CardMedia className="media" image={product.image} title={product.name} />
       <CardContent CardContent >
         <div className="cardContent">
