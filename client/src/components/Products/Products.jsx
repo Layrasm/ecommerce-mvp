@@ -5,19 +5,7 @@ import './products.css';
 
 
 
-const products = [
-  { id: 1, name: 'Shirts', description: 'cool t-shirts', price: '$5', image: 'https://res.cloudinary.com/dbbgin0ik/image/upload/v1620607647/t-shirt_diz16h.jpg' },
-  { id: 2, name: 'Shirts', description: 'cool t-shirts', price: '$5', image: 'https://res.cloudinary.com/dbbgin0ik/image/upload/v1620607647/t-shirt_diz16h.jpg' },
-  { id: 3, name: 'Shirts', description: 'cool t-shirts', price: '$5', image: 'https://res.cloudinary.com/dbbgin0ik/image/upload/v1620607647/t-shirt_diz16h.jpg' },
-  { id: 4, name: 'Shirts', description: 'cool t-shirts', price: '$5', image: 'https://res.cloudinary.com/dbbgin0ik/image/upload/v1620607647/t-shirt_diz16h.jpg' },
-  { id: 5, name: 'Shirts', description: 'cool t-shirts', price: '$5', image: 'https://res.cloudinary.com/dbbgin0ik/image/upload/v1620607647/t-shirt_diz16h.jpg' },
-  { id: 6, name: 'Shirts', description: 'cool t-shirts', price: '$5', image: 'https://res.cloudinary.com/dbbgin0ik/image/upload/v1620607647/t-shirt_diz16h.jpg' },
-
-
-
-];
-
-const Products = () => {
+const Products = ({ products }) => {
   return (
     <main className="content">
       <div className="toolbar" />
