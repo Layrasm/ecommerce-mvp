@@ -8,6 +8,7 @@ import { commerce } from '../lib/commerce';
 const Home = () => {
 
   const [products, setProducts] = useState([]);
+  const [cart, setCart] = useState({});
 
   const fetchProducts = async () => {
     const { data } = await commerce.products.list();
@@ -15,18 +16,27 @@ const Home = () => {
     setProducts(data);
   }
 
+  const fetchCart = async () => {
+    setCart(await commerce.cart.retrieve());
+  }
+
+  const handleAddToCart = async (productID, quantity) => {
+    const item = await commerce.cart.add(productID, quantity);
+    setCart(item.cart);
+  }
+
   useEffect(() => {
     fetchProducts();
-
+    fetchCart();
   }, []);
 
-
+  console.log(cart);
 
   return (
     <div className="home" >
-      <Navbar2 />
+      <Navbar2 totalItems={cart.total_items} />
       <Banner />
-      <Products products={products} />
+      <Products products={products} onAddToCart={handleAddToCart} />
 
     </div >
 
