@@ -4,6 +4,8 @@ import Navbar2 from './Navbar/Navbar';
 import Banner from './Banner/Banner';
 import '../App.css';
 import { commerce } from '../lib/commerce';
+import Cart from './Cart/Cart';
+
 
 const Home = () => {
 
@@ -30,13 +32,13 @@ const Home = () => {
     fetchCart();
   }, []);
 
-  console.log(cart);
 
   return (
     <div className="home" >
       <Navbar2 totalItems={cart.total_items} />
       <Banner />
       <Products products={products} onAddToCart={handleAddToCart} />
+      <Cart cart={cart} />
 
     </div >
 

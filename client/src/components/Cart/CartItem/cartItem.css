@@ -1,0 +1,18 @@
+.cartItemMedia {
+  height: 500px;
+}
+
+.cartItemCardContent {
+  display: flex;
+  justify-content: space-between;
+  color: black;
+}
+
+.cartItemCardActions {
+  justify-content: space-between;
+}
+
+.cartItemButtons {
+  display: flex;
+  align-items: center;
+}
