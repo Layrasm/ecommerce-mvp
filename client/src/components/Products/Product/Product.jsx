@@ -26,7 +26,7 @@ const Product = ({ product, onAddToCart }) => {
           <Button className="showButton" onClick={() => setShow(!show)}>
             {show ? "Hide" : "View More"}
           </Button>
-          <IconButton aria-label="Add To Cart" onClick={() => onAddToCart(product.id, 1)} className="cartButton">
+          <IconButton aria-label="Add To Cart" onClick={() => onAddToCart(product.id, 1)} className="addCartButton">
             <AddShoppingCart />
           </IconButton>
         </div>

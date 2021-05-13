@@ -21,8 +21,8 @@ const Cart = ({ cart }) => {
           </Grid>
         ))}
       </Grid>
-      <div className="cardDetails">
-        <Typography variant="h4"> Subtotal: {cart.subtotal.formatted_with_symbol} </Typography>
+      <div className="cartDetails">
+        <Typography variant="h2"> Subtotal: {cart.subtotal.formatted_with_symbol} </Typography>
         <div>
           <Button classname="emptyButton" size="large" type="button" variant="contained" color="secondary">Empty Cart</Button>
           <Button classname="checkoutButton" size="large" type="button" variant="contained" color="primary" >Checkout</Button>
@@ -36,9 +36,9 @@ const Cart = ({ cart }) => {
   if (!cart.line_items) return 'Loading...';
 
   return (
-    <Container>
-      <div className="toolbar" />
-      <Typography className="title" variant="h2">Your Shopping Cart</Typography>
+    <Container className="cartToolbar">
+      <div />
+      <Typography className="cartTitle" variant="h4">Your Shopping Cart</Typography>
       {!cart.line_items.length ? <EmptyCart /> : <FilledCart />}
     </Container>
   )

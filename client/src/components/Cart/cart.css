@@ -1,5 +1,7 @@
- .title {
-   margin-top: 5%;
+ .cartTitle {
+   margin-top: 30px !important;
+   margin-bottom: 50px !important;
+   color: #00FF00;
  }
 
  .emptyButton {
@@ -10,9 +12,14 @@
    min-width: 150px;
  }
 
- .cardDetails {
+ .cartDetails {
    display: flex;
    margin-top: 10%;
    width: 100%;
    justify-content: space-between;
+   color: #00FF00;
+ }
+
+ .cartToolbar{
+   padding-top: 65px;
  }

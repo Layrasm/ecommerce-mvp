@@ -5,6 +5,8 @@ import Banner from './Banner/Banner';
 import '../App.css';
 import { commerce } from '../lib/commerce';
 import Cart from './Cart/Cart';
+import { Route, Switch } from "react-router-dom";
+
 
 
 const Home = () => {
@@ -34,13 +36,20 @@ const Home = () => {
 
 
   return (
+
     <div className="home" >
       <Navbar2 totalItems={cart.total_items} />
-      <Banner />
-      <Products products={products} onAddToCart={handleAddToCart} />
-      <Cart cart={cart} />
-
+      <Switch>
+        <Route exact path="/">
+          <Banner />
+          <Products products={products} onAddToCart={handleAddToCart} />
+        </Route>
+        <Route exact path="/cart">
+          <Cart cart={cart} />
+        </Route>
+      </Switch>
     </div >
+
 
 
 

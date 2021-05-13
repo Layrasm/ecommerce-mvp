@@ -3,20 +3,33 @@
 }
 
 .cartItemRoot {
-  height: 550px;
+  height: 600px;
 }
 
 .cartItemCardContent {
   display: flex;
   justify-content: space-between;
-  color: black;
+  color: rgb(0, 0, 0);
+  height: 75px;
 }
 
-.cartItemCardActions {
-  justify-content: space-between;
-}
-
-.cartItemButtons {
+.cartItemActions {
   display: flex;
-  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px !important;
+  padding-right: 15px !important;
+  padding-left: 15px !important;
+}
+
+
+.cartRemoveItem{
+  background-color: #ff3300 !important;
+}
+
+.subtractOne {
+  background-color: #ff3300 !important;
+}
+
+.addOne {
+  background-color: #00FF00 !important;
 }
