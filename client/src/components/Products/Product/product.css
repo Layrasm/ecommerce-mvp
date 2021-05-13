@@ -2,16 +2,14 @@
   display: flex;
   justify-content: space-between;
   color: white;
-  
-
-  
-
+  height: 75px;
+  padding-bottom: 10px;
 
 }
 
 .cardActions {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
 
 }
 
@@ -25,10 +23,11 @@
   color: white;
 }
 
-.root {
+.cardRoot {
   max-width: 100%;
   border: #0F0 solid 2px !important;
   background-color: rgb(31, 31, 31) !important;
+  height: 100%;
 
 
   /* -webkit-box-shadow: 5px 6px 16px -1px #00FF00 !important; 
@@ -36,12 +35,36 @@
 
 }
 
-.buttons {
+.cartButton {
   color: #00FF00 !important;
+  background-color: black !important;
+  width: 60px;
+  height: 60px;
+  border-color: #00FF00 !important;
+
 }
 
-.root:hover {
+.cardRoot:hover {
   -webkit-box-shadow: 0px 0px 10px 4px #00FF00 !important; 
   box-shadow: 0px 0px 10px 4px #00FF00 !important;
+}
+
+.showButton {
+  background: black !important; 
+    border-style: outset !important;
+    border-width: 1px !important;
+    border-color: #00FF00 !important;
+    border-radius: 8px !important;
+    color: #00FF00 !important;
+    padding: 8px 15px !important;
+    text-align: center !important;
+    text-decoration: none !important;
+    display: inline-block !important;
+    font-size: 16px !important;
+    margin: 4px 2px !important;
+    cursor: pointer !important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+    min-width:50px !important;
+    min-height: 50px !important;
 }
 

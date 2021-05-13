@@ -7,7 +7,7 @@ const CartItem = ({ item }) => {
 
 
   return (
-    <Card>
+    <Card className="cartItemRoot">
       <CardMedia image={item.media.source} alt={item.name} className="cartItemMedia" />
       <CardContent className="cartItemCardContent">
         <Typography variant="h4">{item.name}</Typography>

@@ -1,5 +1,9 @@
 .cartItemMedia {
-  height: 500px;
+  height: 400px;
+}
+
+.cartItemRoot {
+  height: 550px;
 }
 
 .cartItemCardContent {
