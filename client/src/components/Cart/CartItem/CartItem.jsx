@@ -20,12 +20,13 @@ const CartItem = ({ item }) => {
       <CardActions className="cartItemActions">
         <div className="cartItemQuantities">
           <Button variant="contained" className="subtractOne" type="button" size="small">-</Button>
+          <Typography className="qtyText">&nbsp; Qty &nbsp;</Typography>
           <Button variant="contained" className="addOne" type="button" size="small">+</Button>
         </div>
         <div>
           <Button className="cartRemoveItem" variant="contained" type="button">Remove All</Button>
         </div>
-      </CardActions>
+      </CardActions >
 
     </Card >
   )

@@ -23,9 +23,9 @@ const Cart = ({ cart }) => {
       </Grid>
       <div className="cartDetails">
         <Typography variant="h2"> Subtotal: {cart.subtotal.formatted_with_symbol} </Typography>
-        <div>
-          <Button classname="emptyButton" size="large" type="button" variant="contained" color="secondary">Empty Cart</Button>
-          <Button classname="checkoutButton" size="large" type="button" variant="contained" color="primary" >Checkout</Button>
+        <div className="actionButtons">
+          <Button className="emptyButton" size="large" type="button" variant="contained">Empty Cart</Button>
+          <Button className="checkoutButton" size="large" type="button" variant="contained">Checkout</Button>
 
         </div>
 
