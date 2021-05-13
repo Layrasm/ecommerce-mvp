@@ -3,8 +3,12 @@ import { AppBar, Toolbar, IconButton, Badge, MenuItem, Menu, Typography } from '
 import { ShoppingCart } from '@material-ui/icons';
 import logo from '../../assets/apple-touch-icon.png';
 import './navbar.css';
+import { Link, useLocation } from 'react-router-dom';
 
 const Navbar2 = ({ totalItems }) => {
+
+  const location = useLocation();
+
 
 
 
@@ -12,18 +16,19 @@ const Navbar2 = ({ totalItems }) => {
     <div>
       <AppBar position="fixed" className="appBar" color="inherit">
         <Toolbar className="toolbar" >
-          <Typography className="title" color="inherit" variant="h7">
+          <Typography component={Link} to="/" className="title" color="inherit" variant="h7">
             <img src={logo} alt="Commerce.js" height="35px" className="image" />
               Woke Supply
           </Typography>
           <div className="grow" />
-          <div className="button">
-            <IconButton aria-label="Show cart items" color="inherit">
-              <Badge badgeContent={totalItems} color="secondary">
-                <ShoppingCart />
-              </Badge>
-            </IconButton>
-          </div>
+          {location.pathname === "/" && (
+            <div className="button">
+              <IconButton component={Link} to="/cart" aria-label="Show cart items" color="inherit">
+                <Badge badgeContent={totalItems} color="secondary">
+                  <ShoppingCart />
+                </Badge>
+              </IconButton>
+            </div>)}
         </Toolbar>
 
       </AppBar>

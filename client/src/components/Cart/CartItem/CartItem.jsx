@@ -3,7 +3,7 @@ import { Typography, Button, Card, CardActions, CardContent, CardMedia, MenuItem
 import './cartItem.css';
 import { Redirect } from 'react-router-dom';
 
-const CartItem = ({ item }) => {
+const CartItem = ({ item, handleRemoveFromCart, handleUpdateCartQty }) => {
 
 
 
@@ -19,12 +19,12 @@ const CartItem = ({ item }) => {
       </CardContent>
       <CardActions className="cartItemActions">
         <div className="cartItemQuantities">
-          <Button variant="contained" className="subtractOne" type="button" size="small">-</Button>
+          <Button variant="contained" className="subtractOne" type="button" size="small" onClick={() => handleRemoveFromCart(item.id, item.quantity - 1)}>-</Button>
           <Typography className="qtyText">&nbsp; Qty &nbsp;</Typography>
-          <Button variant="contained" className="addOne" type="button" size="small">+</Button>
+          <Button variant="contained" className="addOne" type="button" size="small" onClick={() => handleUpdateCartQty(item.id, item.quantity + 1)}>+</Button>
         </div>
         <div>
-          <Button className="cartRemoveItem" variant="contained" type="button">Remove All</Button>
+          <Button className="cartRemoveItem" variant="contained" type="button" onClick={() => handleRemoveFromCart(item.id)}>Remove All</Button>
         </div>
       </CardActions >
 
