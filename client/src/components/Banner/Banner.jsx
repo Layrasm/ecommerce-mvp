@@ -5,12 +5,12 @@ import banner from '../../assets/clearance-banner.jpg'
 
 const Banner = () => {
   return (
-    <div>
-      <Card className="bannerBackground" >
-        <CardMedia className="bannerMedia" image={banner} />
-      </Card>
 
-    </div>
+    <Card className="bannerBackground">
+      <CardMedia className="bannerMedia" image={banner} />
+    </Card>
+
+
   )
 }
 

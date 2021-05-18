@@ -6,6 +6,10 @@ import '../App.css';
 import { commerce } from '../lib/commerce';
 import Cart from './Cart/Cart';
 import { Route, Switch } from "react-router-dom";
+import { Typography } from '@material-ui/core';
+import Checkout from './Checkout/Checkout';
+import Ticker from './Ticker/Ticker';
+
 
 
 
@@ -57,7 +61,11 @@ const Home = () => {
       <Navbar2 totalItems={cart.total_items} />
       <Switch>
         <Route exact path="/">
-          <Banner />
+          <div className="mainMedia">
+            <Banner />
+            <Ticker />
+          </div>
+          <Typography variant="h2" className="homeFont">Products</Typography>
           <Products products={products} onAddToCart={handleAddToCart} />
         </Route>
         <Route exact path="/cart">
@@ -67,6 +75,9 @@ const Home = () => {
             handleEmptyCart={handleEmptyCart}
             handleRemoveFromCart={handleRemoveFromCart}
           />
+        </Route>
+        <Route exact path="/checkout">
+          <Checkout />
         </Route>
       </Switch>
     </div >

@@ -4,7 +4,18 @@
 }
 
 .home {
-  max-width: 100% !important;
   background: linear-gradient(to top, black, 94%, rgb(105, 105, 105));
+  height: 100% !important;
+  width: 100% !important;
+}
 
+.homeFont {
+  text-align: center;
+  color: white;
+  font-weight: 300 !important;
+}
+
+.mainMedia {
+  display: flex;
+  padding-top: 100px;
 }

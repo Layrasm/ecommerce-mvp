@@ -10,11 +10,11 @@
 }
 
 .bannerBackground {
-  padding-top: 150px !important;
-  padding-bottom: 85px !important;
-  background: linear-gradient(to top, black, 94%, rgb(105, 105, 105));
-  border-radius: 0rem !important;
-
+  padding-top: 100px !important;
+  padding-bottom: 100px !important;
+  background-color: inherit !important;
+  border: none !important;
+  box-shadow: none !important;
 
 }
 

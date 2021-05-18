@@ -10,10 +10,12 @@ const Cart = ({ cart, handleUpdateCartQty, handleRemoveFromCart, handleEmptyCart
   // const isEmpty = !cart.line_items.length;
 
   const EmptyCart = () => (
-    <Typography variant="subtitle1">
-      Your cart is empty!
+    <Typography variant="subtitle1" className="emptyCart">
+      Your cart is empty! &nbsp;
       <Link to="/">Continue Shopping</Link>
+
     </Typography>
+
   );
 
   const FilledCart = () => (
@@ -29,7 +31,7 @@ const Cart = ({ cart, handleUpdateCartQty, handleRemoveFromCart, handleEmptyCart
         <Typography variant="h4"> Subtotal: {cart.subtotal.formatted_with_symbol} </Typography>
         <div>
           <Button className="emptyButton" size="large" type="button" variant="contained" onClick={handleEmptyCart}>Empty Cart</Button>
-          <Button className="checkoutButton" size="large" type="button" variant="contained">Checkout</Button>
+          <Button component={Link} to="/checkout" className="checkoutButton" size="large" type="button" variant="contained">Checkout</Button>
 
         </div>
 
@@ -42,7 +44,7 @@ const Cart = ({ cart, handleUpdateCartQty, handleRemoveFromCart, handleEmptyCart
   return (
     <Container className="cartToolbar">
       <div />
-      <Typography className="cartTitle" variant="h4">Your Shopping Cart</Typography>
+      <Typography className="cartTitle" variant="h4">Shopping Cart</Typography>
       {!cart.line_items.length ? <EmptyCart /> : <FilledCart />}
     </Container>
   )

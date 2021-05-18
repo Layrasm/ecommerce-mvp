@@ -1,7 +1,8 @@
  .cartTitle {
    margin-top: 30px !important;
    margin-bottom: 50px !important;
-   color: #00FF00;
+   color: white;
+   font-weight: 500 !important;
  }
 
  .emptyButton {
@@ -55,14 +56,21 @@
 
  .cartDetails {
    display: flex;
-   margin-top: 10%;
+   margin-top: 100px;
    max-width: 100% !important;
-   justify-content: space-between;
-   color: #00FF00;
+   justify-content: flex-end;   
+   color: white;
+   padding-bottom: 15px;
+   align-items: center;
  }
 
  .cartToolbar{
-   padding-top: 65px;
+   padding-top: 65px;   
+ }
+
+ .emptyCart {
+   height: 100vh;
+   color: white;
  }
 
  
