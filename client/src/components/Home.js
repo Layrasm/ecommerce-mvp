@@ -8,6 +8,7 @@ import Cart from './Cart/Cart';
 import { Route, Switch } from "react-router-dom";
 import Checkout from './Checkout/Checkout';
 import Ticker from './Ticker/Ticker';
+import CarouselHeader from './Carousel/CarouselHeader';
 
 
 
@@ -60,6 +61,7 @@ const Home = () => {
       <Navbar2 totalItems={cart.total_items} />
       <Switch>
         <Route exact path="/">
+          <CarouselHeader />
           <div className="mainMedia">
             <Banner />
             <Ticker />

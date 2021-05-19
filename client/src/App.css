@@ -6,7 +6,7 @@
 .home {
   background: linear-gradient(to top, black, 94%, rgb(105, 105, 105));
   height: 100% !important;
-  width: 100% !important;
+  max-width: 100% !important;
 }
 
 
