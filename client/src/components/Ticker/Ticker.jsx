@@ -2,18 +2,40 @@ import React from 'react';
 import './ticker.css';
 import logo from '../../assets/Dogecoin_Logo.png';
 import PriceCard from './PriceCard';
+import axios from 'axios';
+import { useState, useEffect } from 'react';
 
 
 const Ticker = () => {
+
+  const [ticker, setTicker] = useState({
+    low: 0,
+    high: 0,
+    last: 0,
+  });
+
+
+
+  useEffect(() => {
+    async function getDogecoinPrice() {
+      const { data } = await axios.get(
+        'https://nitinr-cors.herokuapp.com/https://api.wazirx.com/api/v2/tickers/dogeusdt'
+      );
+      setTicker(data.ticker);
+    }
+    getDogecoinPrice();
+    setInterval(() => getDogecoinPrice(), 1000);
+  }, []);
+
   return (
     <div className="tickerMain">
       <img src={logo} width={150} height={150} alt="dogecoin logo" />
       <h1 className="titleTicker">Live Dogecoin Price</h1>
       <h5 className="subtitleTicker">To The Moon 🚀🌕</h5>
-      <div className="pricesContainer">
-        <PriceCard type="low" price={100} />
-        <PriceCard type="high" price={200} />
-        <PriceCard type="current" price={150} />
+      <div className="priceContainer">
+        <PriceCard type="low" price={parseFloat(ticker.low).toFixed(3)} />
+        <PriceCard type="high" price={parseFloat(ticker.high).toFixed(3)} />
+        <PriceCard type="current" price={parseFloat(ticker.last).toFixed(3)} />
       </div>
     </div>
   )

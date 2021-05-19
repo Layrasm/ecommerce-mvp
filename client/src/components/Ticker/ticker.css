@@ -6,6 +6,7 @@
   padding-left: 50px;
   padding-right: 50px;
   margin-bottom: 50px;
+  width: 600px;
 }
 
 .subtitleTicker {
@@ -15,28 +16,32 @@
 }
 
 .titleTicker {
-  color:#0F0;
+  color:white;
   margin-top: -2px;
   font-size: 45px;
 }
 
-.pricesContainer {
-  max-width: 100%;
+.priceContainer {
+  
   display: flex;
+  justify-content: space-evenly;
+
 }
 
-.price-card {
-  background: black;
+.priceCard {
+  background:rgb(31, 31, 31);
   padding-left: 10px;
   padding-right: 10px;
   border-radius: 8px;
   display: flex;
-  max-width: 100%;
   flex-direction: column;
-  margin-top: -20px;
+  width: 100px;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
-.price-type {
+.priceType {
   text-transform: uppercase;
   letter-spacing: 3px;
   color: #0F0;
@@ -45,6 +50,6 @@
 
 .price {
   color: white;
-  font-size: 40px;
+  font-size: 30px;
   margin-top: -2px;
 }
