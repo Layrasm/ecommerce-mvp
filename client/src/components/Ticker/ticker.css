@@ -1,5 +1,4 @@
 .tickerMain {
-  margin-top: 70px;
   padding-top: 20px;
   display: flex;
   flex-direction: column;
@@ -19,12 +18,16 @@
   color:white;
   margin-top: -30px;
   font-size: 20px;
+  font-weight: 300;
+  font-style: italic;
+
 }
 
 .titleTicker {
   color:white;
   margin-top: -2px;
   font-size: 45px;
+  font-weight: 300;
 }
 
 .priceContainer {
@@ -64,4 +67,10 @@
   display: flex;
   color:white;
   margin-top: 10px;
+  font-weight: 400;
+}
+
+.tickerPhoto{
+  border: solid 2px #0F0;
+  border-radius: 50%;
 }

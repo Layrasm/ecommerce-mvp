@@ -29,7 +29,7 @@ const Ticker = () => {
 
   return (
     <div className="tickerMain">
-      <img src={logo} width={150} height={150} alt="dogecoin logo" />
+      <img className="tickerPhoto" src={logo} width={150} height={150} alt="dogecoin logo" />
       <h1 className="titleTicker">Live Dogecoin Price</h1>
       <h5 className="subtitleTicker">To The Moon 🚀🌕</h5>
       <div className="priceContainer">
