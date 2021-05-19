@@ -14,4 +14,5 @@
 .mainMedia {
   display: flex;
   padding-top: 100px;
+  justify-content: space-evenly;
 }

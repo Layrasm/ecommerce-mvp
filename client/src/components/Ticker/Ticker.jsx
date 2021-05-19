@@ -35,7 +35,10 @@ const Ticker = () => {
       <div className="priceContainer">
         <PriceCard type="low" price={parseFloat(ticker.low).toFixed(3)} />
         <PriceCard type="high" price={parseFloat(ticker.high).toFixed(3)} />
-        <PriceCard type="current" price={parseFloat(ticker.last).toFixed(3)} />
+        <PriceCard type="current" price={parseFloat(ticker.last).toFixed(4)} />
+      </div>
+      <div>
+        <h5 className="priceDescription">* Last 24 Hours</h5>
       </div>
     </div>
   )
