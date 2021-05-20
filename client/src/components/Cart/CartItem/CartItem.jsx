@@ -1,5 +1,5 @@
 import React from 'react';
-import { Typography, Button, Card, CardActions, CardContent, CardMedia, MenuItem } from '@material-ui/core';
+import { Typography, Button, Card, CardActions, CardContent, CardMedia } from '@material-ui/core';
 import './cartItem.css';
 import { Redirect } from 'react-router-dom';
 

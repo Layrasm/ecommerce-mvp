@@ -1,5 +1,5 @@
 import React from 'react';
-import { AppBar, Toolbar, IconButton, Badge, MenuItem, Menu, Typography } from '@material-ui/core';
+import { AppBar, Toolbar, IconButton, Badge, Typography } from '@material-ui/core';
 import { ShoppingCart } from '@material-ui/icons';
 import logo from '../../assets/apple-touch-icon.png';
 import './navbar.css';
@@ -16,7 +16,7 @@ const Navbar2 = ({ totalItems }) => {
     <div>
       <AppBar position="fixed" className="appBar" color="inherit">
         <Toolbar className="toolbar" >
-          <Typography component={Link} to="/" className="title" color="inherit" variant="h7">
+          <Typography component={Link} to="/" className="title" color="inherit" variant="h6">
             <img src={logo} alt="Commerce.js" height="35px" className="image" />
               Woke Supply
           </Typography>

@@ -2,24 +2,27 @@ import React from 'react';
 import Carousel from 'react-material-ui-carousel';
 import CarouselItem from './CarouselItem';
 import './carousel.css';
+import carouselHat from '../../assets/carousel-hat.png';
 
 const CarouselHeader = () => {
   var items = [
     {
-      name: "Random Name #1",
-      description: "Probably the most random thing you have ever seen!",
+      name: "hats",
+      imgSrc: carouselHat,
     },
     {
-      name: "Random Name #2",
-      description: "Hello World!",
+      name: "bags",
+
 
     }
   ]
 
   return (
-    <Carousel className="carousel" autoPlay={false}>
-      {items.map((item, i) => <CarouselItem key={i} item={item} />)}
-    </Carousel>
+    <div className="carouselRoot">
+      <Carousel autoPlay={false}>
+        {items.map((item, i) => <CarouselItem key={i} item={item} />)}
+      </Carousel>
+    </div>
   )
 }
 

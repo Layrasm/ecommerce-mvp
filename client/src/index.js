@@ -5,16 +5,16 @@ import Home from './components/Home';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter, } from 'react-router-dom';
 import { initMiddleware, } from 'devise-axios';
-import AuthProvider from "./providers/AuthProvider";
+// import AuthProvider from "./providers/AuthProvider";
 
 initMiddleware();
 
 ReactDOM.render(
-  <AuthProvider>
-    <BrowserRouter>
-      <Home />
-    </BrowserRouter>
-  </AuthProvider>,
+  // <AuthProvider>
+  <BrowserRouter>
+    <Home />
+  </BrowserRouter>,
+  // </AuthProvider>,
   document.getElementById('root')
 );
 

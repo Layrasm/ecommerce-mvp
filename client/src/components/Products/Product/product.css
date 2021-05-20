@@ -25,14 +25,9 @@
 
 .cardRoot {
   max-width: 100%;
-  border: #0F0 solid 2px !important;
+  border: rgb(83, 83, 83) solid 2px !important;
   background-color: rgb(31, 31, 31) !important;
   height: 100%;
-
-
-  /* -webkit-box-shadow: 5px 6px 16px -1px #00FF00 !important; 
-  box-shadow: 5px 6px 16px -1px #00FF00 !important; */
-
 }
 
 .addCartButton {

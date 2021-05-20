@@ -9,6 +9,7 @@ import { Route, Switch } from "react-router-dom";
 import Checkout from './Checkout/Checkout';
 import Ticker from './Ticker/Ticker';
 import CarouselHeader from './Carousel/CarouselHeader';
+import { Grid } from '@material-ui/core';
 
 
 
@@ -62,10 +63,10 @@ const Home = () => {
       <Switch>
         <Route exact path="/">
           <CarouselHeader />
-          <div className="mainMedia">
+          <Grid container className="mainMedia">
             <Banner />
             <Ticker />
-          </div>
+          </Grid>
           <Products products={products} onAddToCart={handleAddToCart} />
         </Route>
         <Route exact path="/cart">
