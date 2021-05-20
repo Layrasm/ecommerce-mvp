@@ -1,18 +1,16 @@
 import React from 'react';
-import { Paper, Button } from '@material-ui/core';
+import { Card, CardMedia, Button } from '@material-ui/core';
 
 
 const CarouselItem = ({ item }) => {
 
   return (
-    <Paper className="carouselContent">
-      <div>
-        <img className="carouselImage" src={item.imgSrc} alt="" />
-        <Button className="carouselButton">
-          Check it out!
+    <Card className="carouselContent">
+      <CardMedia className="carouselImage" image={item.imgSrc} alt="" />
+      <Button className="carouselButton">
+        View All
         </Button>
-      </div>
-    </Paper>
+    </Card>
   )
 }
 

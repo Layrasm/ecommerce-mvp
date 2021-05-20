@@ -3,6 +3,7 @@ import Carousel from 'react-material-ui-carousel';
 import CarouselItem from './CarouselItem';
 import './carousel.css';
 import carouselHat from '../../assets/carousel-hat.png';
+import carouselBag from '../../assets/carousel-bag.png';
 
 const CarouselHeader = () => {
   var items = [
@@ -12,7 +13,7 @@ const CarouselHeader = () => {
     },
     {
       name: "bags",
-
+      imgSrc: carouselBag,
 
     }
   ]

@@ -57,13 +57,11 @@
     color: #00FF00 !important;
     padding: 8px 15px !important;
     text-align: center !important;
-    text-decoration: none !important;
-    display: inline-block !important;
     font-size: 16px !important;
     margin: 4px 2px !important;
     cursor: pointer !important;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
-    min-width:50px !important;
+    min-width: 50px !important;
     min-height: 50px !important;
 }
 
