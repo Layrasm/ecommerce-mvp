@@ -18,7 +18,7 @@
 }
 
 .carouselButton {
-  background: black !important; 
+  background: linear-gradient(to top, black, 88%, rgb(105, 105, 105)) !important;
   border-style: outset !important;
   border-width: 1px !important;
   border-color: #00FF00 !important;
@@ -27,14 +27,9 @@
   padding: 8px 15px !important;
   text-align: center !important;
   font-size: 16px !important;
-  margin-top: -75px !important;
+  margin: 4px 2px !important;
   cursor: pointer !important;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+  box-shadow: 0px 0px 6px 1px rgba(0,255,0,0.8) !important;
   min-width: 50px !important;
   min-height: 50px !important;
-  max-width: 150px !important;
-}
-
-.carouselButton:hover {
-  background-color: rgb(49, 49, 49) !important;
 }

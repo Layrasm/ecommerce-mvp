@@ -4,8 +4,10 @@
 
 .cartItemRoot {
   max-width: 100%;
-  border: #0F0 solid 2px !important;
+  border: rgb(82, 82, 82) solid 1px !important;
   background-color: rgb(31, 31, 31) !important;
+  background: linear-gradient(to top, rgb(31, 31, 31), 99%, rgb(83, 83, 83)) !important;
+  border-radius: 1rem !important;
   height: 100%;
 }
 
@@ -31,7 +33,7 @@
 }
 
 .cartRemoveItem{
-  background: black !important; 
+  background: linear-gradient(to top, black, 88%, rgb(105, 105, 105)) !important;
   border-style: outset !important;
   border-width: 1px !important;
   border-color: #ff3300 !important;
@@ -49,12 +51,9 @@
   min-height: 50px !important;
 }
 
-.cartRemoveItem:hover{
-  background-color: rgb(49, 49, 49) !important;
-}
 
 .subtractOne {
-  background: black !important; 
+  background: linear-gradient(to top, black, 88%, rgb(105, 105, 105)) !important;
   border-style: outset !important;
   border-width: 1px !important;
   border-color: #ff3300 !important;
@@ -77,7 +76,7 @@
 }
 
 .addOne {
-  background: black !important; 
+    background: linear-gradient(to top, black, 88%, rgb(105, 105, 105)) !important;
     border-style: outset !important;
     border-width: 1px !important;
     border-color: #00FF00 !important;
@@ -95,9 +94,6 @@
     min-height: 50px !important;
 }
 
-.addOne:hover{
-  background-color: rgb(49, 49, 49) !important;
-}
 
 .qtyText{
   color: white;
